@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Giga Pet</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Giga Pet's
+      </h1>
+    </header>
+
+    <main>
+
+      <section class="pet-selection">
+        <label for="beastType">Select a beast</label>
+        <select id="beastType">
+          <option value="">--Choose a Beast</option>
+          <option value="jobberknoll">Jobberknoll</option>
+          <option value="puffskein">PuffSkein</option>
+          <option value="niffler">Niffler</option>
+          <option value="hippogriff">Hippogriff</option>
+        </select>
+
+        <input type="text" id="beastNameInput" placeholder="Enter beast name">
+        <button class="shelterButton">Shelter Beast</button>
+      </section>
+
+
+      <section class="pet-image-container">
+         <!-- Replace pet image with your own pet image -->
+        <img class="pet-image" src="images/hound.jpg">
+      </section>
+
+
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span></strong></div>
+        <div>Trust: <strong><span class="trust"></span> </strong></div>
+        <div class="button-container">
+          <button class="treat-button">
+            Treat
+          </button>
+          <button class="play-button">
+            Play
+          </button>
+          <button class="exercise-button">
+            Exercise
+          </button>
+
+          <!-- my new Button "Cuddle" that affects happiness and trust-->
+          <button class="cuddle-button">
+            Cuddle
+          </button>
+        </div>
+        <div class="message-box">
+          <p class = "message"></p>
+        </div>
+
+        <h2>Your Sheltered Beasts</h2>
+        <ul class="sheltered-beast-list"></ul>
+
+      </section>
+
+
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
